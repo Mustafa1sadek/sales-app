@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>CRUDS project</title>
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!-- <div class="team  text-center">
+        <h3>our team</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing.</p>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4">
+                    <div class="member">
+                        <img src="images/1.jpg" alt="" class="w-100"> 
+                        <h4>sasa</h4>
+                        <p>Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet.</p>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="member">
+                        <img src="images/2.jpg" alt="" class="w-100">
+                        <h4>sasa</h4>
+                        <p>Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet.</p>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="member">
+                        <img src="images/3.jpg" alt="" class="w-100">
+                        <h4>sasa</h4>
+                        <p>Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="profile py-5 text-center">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 ">
+                    <img src="images/two.png" class="w-100 mb-2 rounded-circle" alt="">
+                    <h4 class="fw-bold">Name :</h4>
+                    <p class="lead">Mustafa sadek</p>                  
+
+                    <h4 class="fw-bold">Number :</h4>
+                    <p class="lead">01128865197</p>
+
+                    <h4 class="fw-bold">Adress :</h4>
+                    <p class="lead">bilbil</p>
+                </div>
+                
+                <div class="col-lg-9  d-flex align-items-center ">
+                    <div class="">
+                        <h2>I am mostafa sadek backend engineer </h2>
+                        <p class="text-muted lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi harum dolorum maxime quisquam odit culpa.</p>
+                        <div class="row">
+                            <div class="col-lg-4">
+                                <i class="fab fa-instagram fa-5x"></i>
+                                <h4 class="my-2">Graduation</h4>
+                                <p class="lead">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Provident doloribus libero illum, consequuntur facere optio tenetur totam corporis dolorem alias omnis quisquam minima quae ducimus?</p>
+                                <p class="lead">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Provident doloribus libero illum, consequuntur facere optio tenetur totam corporis dolorem alias omnis quisquam minima quae ducimus?</p>
+                            </div>
+                            
+                            <div class="col-lg-4">
+                                <i class="fab fa-google"></i>
+
+                                <h4 class="my-2">Graduation</h4>
+                                <p class="lead">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Provident doloribus libero illum, consequuntur facere optio tenetur totam corporis dolorem alias omnis quisquam minima quae ducimus?</p>
+                                <p class="lead">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Provident doloribus libero illum, consequuntur facere optio tenetur totam corporis dolorem alias omnis quisquam minima quae ducimus?</p>
+                            </div>
+                            <div class="col-lg-4">
+                                <i class="fab fa-twitter"></i>
+
+                                <h4 class="my-2 ">Graduation</h4>
+                                <p class="lead">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Provident doloribus libero illum, consequuntur facere optio tenetur totam corporis dolorem alias omnis quisquam minima quae ducimus?</p>
+                                <p class="lead">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Provident doloribus libero illum, consequuntur facere optio tenetur totam corporis dolorem alias omnis quisquam minima quae ducimus?</p>
+                            </div>
+                    </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div> -->
+
+
+    
+    <div class="w-75 py-4 mx-auto">
+        <label for="productName">productName :</label> 
+        <input type="text" class="form-control my-2" id="productName">
+        <label for="productPrice">productPrice :</label>
+        <input type="number" class="form-control my-2" id="productPrice">
+        <label for="productCategory">productCategory :</label>
+        <input type="text" class="form-control my-2" id="productCategory">        
+        <label for="productDesc">productDesc :</label>
+        <textarea type="text" class="form-control my-2" id="productDesc"></textarea>
+        
+        <button id="main-btn" onclick="addProduct()" class="btn btn-info">add product</button>
+    </div>
+    <div class=" mx-auto py-4 w-75 text-center">
+        <div class=" w-75 mx-auto py-4">
+            <label for="searchInput">search ..</label>
+            <input type="text" class="form-control" name="" onkeyup="searchProduct(searchInput.value)" id="searchInput">
+        </div>
+        <table class="table">
+            <thead>
+                <th>Index</th>
+                <th>productName</th>
+                <th>productPrice</th>
+                <th>productCategory</th>
+                <th>productDesc</th>
+                <th>update</th>
+                <th>delete</th>
+            </thead> 
+            <tbody id="tableRow">
+
+
+            </tbody>
+        </table>
+    </div>
+
+
+    <script src="js/main.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
